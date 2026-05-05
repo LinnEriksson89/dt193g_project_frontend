@@ -1,6 +1,11 @@
-<script setup></script>
+<script setup>
+import PageHeader from '@/components/PageHeader.vue';
+</script>
 
-<template></template>
+<template>
+    <PageHeader page-title="Om oss" />
+    <p>Här skriver man en text om företaget.</p>
+</template>
 
 
 <style scoped></style>
