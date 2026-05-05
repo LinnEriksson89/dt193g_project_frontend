@@ -1,7 +1,10 @@
 import AboutView from '@/views/AboutView.vue'
 import HomeView from '@/views/HomeView.vue'
+import LoginView from '@/views/LoginView.vue'
 import ProductTableView from '@/views/ProductTableView.vue'
 import ProductView from '@/views/ProductView.vue'
+import RegisterView from '@/views/RegisterView.vue'
+import AddProductView from '@/views/AddProductView.vue'
 import { createRouter, createWebHistory } from 'vue-router'
 
 const router = createRouter({
@@ -26,6 +29,21 @@ const router = createRouter({
       path: '/allproducts',
       name: 'alla produkter',
       component: ProductTableView,
+    },
+    {
+      path: '/addproduct',
+      name: 'lägg till produkter',
+      component: AddProductView,
+    },
+    {
+      path: '/register',
+      name: 'registrera',
+      component: RegisterView,
+    },
+    {
+      path: '/login',
+      name: 'logga in',
+      component: LoginView,
     },
   ],
 })
