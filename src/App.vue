@@ -5,10 +5,10 @@ import { RouterView } from 'vue-router'
 </script>
 
 <template>
-    <div id="background">
-        <div id="wrapper">
+    <div id="background" class="bg-red-950 min-h-lvh">
+        <div id="wrapper" class="max-w-6xl m-auto bg-neutral-300">
             <Header />
-            <main>
+            <main class="p-4">
                 <router-view />
             </main>
             <Footer />
