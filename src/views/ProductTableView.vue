@@ -1,9 +1,9 @@
 <script>
 //For some reason I can't get methods to work inside a <script setup> so due to lack of thime we're now using the old method.
-import ProductTable from '@/components/ProductTable.vue';
-import PageHeader from '@/components/PageHeader.vue';
-import CategoryTable from '@/components/CategoryTable.vue';
-import SubHeader from '@/components/SubHeader.vue';
+import ProductTable from '@/components/tables/ProductTable.vue';
+import PageHeader from '@/components/design/PageHeader.vue';
+import CategoryTable from '@/components/tables/CategoryTable.vue';
+import SubHeader from '@/components/design/SubHeader.vue';
 
 export default {
     data() {

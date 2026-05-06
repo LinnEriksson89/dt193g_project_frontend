@@ -1,7 +1,7 @@
 <script>
-import CategoryForm from '@/components/CategoryForm.vue';
-import MovieForm from '@/components/MovieForm.vue';
-import PageHeader from '@/components/PageHeader.vue';
+import CategoryForm from '@/components/forms/CategoryForm.vue';
+import MovieForm from '@/components/forms/MovieForm.vue';
+import PageHeader from '@/components/design/PageHeader.vue';
 
 export default {
     data() {
