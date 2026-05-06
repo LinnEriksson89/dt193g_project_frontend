@@ -5,23 +5,29 @@ export default {
             name: "",
             email: "",
             password: "",
+            password_confirmed: "",
             errorMessage: ""
         }
     },
     methods: {
         createUser() {
-            const newUser = {
-                name: this.name,
-                email: this.email,
-                password: this.password
+            //Check that password is the same
+            if (this.password === this.password_confirmed) {
+                const newUser = {
+                    name: this.name,
+                    email: this.email,
+                    password: this.password
+                }
+
+                this.addUser(newUser);
+
+                //Reset form
+                this.name = "";
+                this.email = "";
+                this.password = "";
+            } else {
+                this.errorMessage = "Lösenordet matchar inte.";
             }
-
-            this.addUser(newUser);
-
-            //Reset form
-            this.name = "";
-            this.email = "";
-            this.password = "";
         },
         async addUser(newUser) {
             //try-catch to create user with fetch
