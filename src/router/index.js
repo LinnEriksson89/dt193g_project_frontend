@@ -2,7 +2,7 @@ import AboutView from '@/views/AboutView.vue'
 import HomeView from '@/views/HomeView.vue'
 import LoginView from '@/views/LoginView.vue'
 import ProductTableView from '@/views/ProductTableView.vue'
-import ProductView from '@/views/ProductView.vue'
+import UpdateProductView from '@/views/UpdateProductView.vue'
 import RegisterView from '@/views/RegisterView.vue'
 import AddProductView from '@/views/AddProductView.vue'
 import { createRouter, createWebHistory } from 'vue-router'
@@ -16,9 +16,21 @@ const router = createRouter({
       component: HomeView,
     },
     {
-      path: '/product',
-      name: 'produkter',
-      component: ProductView,
+      path: '/update',
+      name: 'Uppdatera',
+      component: UpdateProductView,
+    },
+    {
+      path: '/update/category/:id',
+      name: 'uppdatera kategori',
+      component: UpdateProductView,
+      props: true,
+    },
+    {
+      path: '/update/movie/:id',
+      name: 'uppdatera film',
+      component: UpdateProductView,
+      props: true,
     },
     {
       path: '/about',
