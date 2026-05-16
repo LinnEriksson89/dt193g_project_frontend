@@ -10,6 +10,7 @@ import Navbutton from './Navbutton.vue';
             <Navbutton title="Om oss" link="/about" />
             <Navbutton title="Filmer" link="/allproducts" />
             <Navbutton title="Lägg till" link="/addproduct" />
+            <Navbutton title="Uppdatera" link="/update" />
         </ul>
     </nav>
 </template>
